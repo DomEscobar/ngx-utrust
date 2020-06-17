@@ -13,6 +13,8 @@ export interface ApiConfig
      */
     apiKey?: string;
 
-
-    apiurl?: string;
+    /**
+     *  Required
+     */
+    apiurl: string;
 }

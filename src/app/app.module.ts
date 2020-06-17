@@ -12,7 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     HttpClientModule,
     BrowserModule,
-    NgxUtrustModule.forRoot({ apiKey: 'u_test_api_1fd88918-a5cf-436d-bda4-eaad94dd7225', apiurl: 'https://cors-anywhere.herokuapp.com/https://merchants.api.sandbox-utrust.com/api' })
+    NgxUtrustModule.forRoot({ apiKey: 'u_test_api_9fc4cc3a-a360-4d56-b308-9cd79f96ffdd', apiurl: 'https://cors-anywhere.herokuapp.com/https://merchants.api.sandbox-utrust.com/api' })
   ],
   providers: [],
   bootstrap: [AppComponent]

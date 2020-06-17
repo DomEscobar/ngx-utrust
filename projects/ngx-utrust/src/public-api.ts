@@ -5,5 +5,4 @@
 export * from './lib/ngx-utrust.module';
 export * from './lib/models/order.model';
 export * from './lib/models/store.model';
-export * from './lib/header-interceptor';
-export * from './lib/services/store.service';
+export * from './lib/services/store/store.service';
