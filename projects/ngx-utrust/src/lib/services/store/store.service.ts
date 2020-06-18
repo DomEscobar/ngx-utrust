@@ -3,6 +3,8 @@ import { API_CONFIG, ApiConfig } from '../../api-config';
 import { HttpClient } from '@angular/common/http';
 import { StoreModel } from '../../models/store.model';
 import { PostModel, PostType } from '../../models/post.model';
+import { Observable } from 'rxjs';
+import { ResponseCreateOrder } from '../../models/response/response.model';
 
 @Injectable()
 export class StoreService
@@ -14,9 +16,9 @@ export class StoreService
     this.API_URL = config.apiurl;
   }
 
-  createStoreOrder(store: StoreModel)
+  createStoreOrder(store: StoreModel): Observable<ResponseCreateOrder>
   {
-    return this.http.post(`${ this.API_URL }/stores/orders`, new PostModel(PostType.Orders, store),
+    return this.http.post<ResponseCreateOrder>(`${ this.API_URL }/stores/orders`, new PostModel(PostType.Orders, store),
       {
         headers: {
           'Authorization': 'Bearer ' + this.config.apiKey,

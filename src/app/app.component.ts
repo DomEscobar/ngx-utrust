@@ -35,7 +35,7 @@ export class AppComponent
     const store = new StoreModel()
     store.order = this.order;
     store.customer = this.customerModel;
-    debugger;
+
     await this.storeService.createStoreOrder(store).toPromise();
   }
 }
